@@ -1,3 +1,5 @@
+$margin: 0 auto 50px auto;
+
 html {
   font-size: 10px;
 }
@@ -15,13 +17,6 @@ body {
 h1 {
   font-size: 4rem;
   margin-bottom: 0;
-}
-
-@media (max-width: 460px) {
-  h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-  }
 }
 
 h2 {
@@ -43,11 +38,6 @@ a:visited {
   background: #eee;
 }
 
-@media (max-width: 460px) {
-  #main {
-    margin: 0;
-  }
-}
 img {
   max-width: 100%;
   display: block;
@@ -65,12 +55,6 @@ img {
   margin: 15px 0 5px 0;
 }
 
-@media (max-width: 460px) {
-  #img-caption {
-    font-size: 1.4rem;
-  }
-}
-
 #headline {
   margin: 50px 0;
   text-align: center;
@@ -78,7 +62,7 @@ img {
 
 ul {
   max-width: 550px;
-  margin: 0 auto 50px auto;
+  margin: $margin;
   text-align: left;
 }
 
@@ -89,6 +73,21 @@ li {
 blockquote {
   font-style: italic;
   max-width: 545px;
-  margin: 0 auto 50px auto;
+  margin: $margin;
   text-align: left;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  #main {
+    margin: 0;
+  }
+
+  #img-caption {
+    font-size: 1.4rem;
+  }
 }
